@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bonvas Tours</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="icon" href="img/TM Bonvas Tours Logo.png" sizes="32x32" type="image/png">
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- AOS -->
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bonvas Tours</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="icon" href="img/TM Bonvas Tours Logo.png" sizes="32x32" type="image/png">
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/booking.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- AOS -->
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                    <a class="navbar-brand" href="index.html">
+                        <strong>
+                            <img src="img/TM Bonvas Tours Logo.png" alt="" />
+                        </strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#package"> Packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+    </div>
+
+
+    <!-- Booking Form Section -->
+    <div class="container py-5" id="booking-form">
+        <h2 class="text-center font-weight-bold mb-4">Book Your Exclusive Package</h2>
+
+        <form id="contactForm" method="POST" class="booking-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="name" placeholder="Enter your full name"
+                        required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number"
+                        required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="packageSelection">Select Package</label>
+                    <select class="form-control" id="packageSelection" name="packageSelection" required>
+                        <option value="" disabled selected>Select a package</option>
+                        <option value="nightlife">Nightlife</option>
+                        <option value="safari">Safari</option>
+                        <option value="historical">Historical</option>
+                        <option value="adventure">Adventure</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="specialRequests">Special Requests (optional)</label>
+                    <textarea class="form-control" id="specialRequests" name="specialRequests" rows="3"
+                        placeholder="Enter any special requests or notes"></textarea>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="packageSelection">Select Package Price</label>
+                    <select class="form-control" id="packagePriceSelection" name="packagePriceSelection" required>
+                        <option value="" disabled selected>Select a Package Price</option>
+                        <option value="standard">Standard Package - $250 USD (Discount - 5%)</option>
+                        <option value="premium">Premium Package - $300 - $400 USD (Discount - 10%)</option>
+                        <option value="luxury">Luxury Package - $1200 USD (Discount - 15%)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class=" d-flex justify-content-center">
+                <div class="d-flex flex-column align-items-center">
+                    <button type="submit" id="submitButton" class="custom_orange-btn">Submit</button>
+                    <div id="loadingIndicator" style="margin-top: 5px; display: none;">Sending....</div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- end client section -->
+
+    <!-- contact section -->
+
+    <footer class="footer_section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-details">
+                    <h3>Stay Connected</h3>
+                    <p>Follow us on social media for the latest updates and travel inspiration:</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook:
+                                Bonvas Tours
+                                Ltd.</a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i> X (formerly
+                                Twitter):
+                                @BonvasTours</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i>
+                                Instagram:
+                                @bonvastours</a></li>
+                        <li><a href="https://www.snapchat.com" target="_blank"><i class="fa fa-snapchat"></i> Snapchat:
+                                @bonvastours</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn:
+                                Bonvas Tours
+                                Limited</a></li>
+                    </ul>
+                    <h4>Visit our website</h4>
+                    <p><a href="https://www.bonvastours.com" target="_blank">www.bonvastours.com</a></p>
+                </div>
+
+                <div class="contact-info" id="contact">
+                    <h4>Contact Us</h4>
+                    <p>For personalized travel assistance, contact us at:</p>
+                    <p><strong>Phone:</strong> +233 261 671 686</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@bonvastours.com">info@bonvastours.com</a></p>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.707942967841!2d-1.5775410259162266!3d6.6830555933122255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb959056702f1f%3A0x56a0dc86db509276!2sBonvas%20Tours%20Limited!5e0!3m2!1sen!2sgh!4v1728036711380!5m2!1sen!2sgh"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Bonvas Tours Ltd, Kumasi, Ghana.</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/bonvastours"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@bonvas.tours?_t=8qaYzmzKnJu&_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/bonvastours/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/bonvas-tours"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://snapchat.com/t/hS8oSyeR"><i class="fab fa-snapchat"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+
+        // template_5ta04vs
+        //service_fvz5xda
+        (function () {
+            emailjs.init("ArTdhMuoZdsNFoM64"); // Replace with your public key
+        })();
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const loadingIndicator = document.getElementById("loadingIndicator");
+            const submitButton = document.getElementById("submitButton");
+
+            loadingIndicator.style.display = "block";
+            submitButton.disabled = true;
+
+            emailjs.send("service_fvz5xda", "template_5ta04vs", {
+                from_name: form.name.value,
+                to_name: 'Bonvas Tours',
+                from_phone: form.phone.value,
+                from_email: form.email.value,
+                to_email: 'info@bonvastours.com',
+                message: `Package Selected: ${form.packageSelection.value},
+                      Package Selected Price: ${form.packagePriceSelection.value}
+                      Special Request Message: ${form.specialRequests.value}      
+            `,
+            })
+                .then(() => {
+                    loadingIndicator.style.display = "none";
+                    alert("Thank you. Our Team will contact you soon.");
+                    form.reset();
+                })
+                .catch((error) => {
+                    loadingIndicator.style.display = "none";
+                    console.error(error);
+                    alert("Oops!, something went wrong. Please try again.");
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                });
+        }
+    </script>
+</body>
+
+</html>

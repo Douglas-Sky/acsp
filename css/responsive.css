@@ -1,0 +1,135 @@
+/* General styles for larger screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* For screens less than or equal to 1120px */
+@media (max-width: 1120px) {
+    .hero_area {
+        height: auto;
+    }
+
+    .slider_section {
+        padding: 50px 0;
+    }
+}
+
+/* For screens less than or equal to 992px */
+@media (max-width: 992px) {
+    .custom_nav-container .nav_search-btn {
+        background-position: center;
+    }
+
+    .service_section .card-deck {
+        flex-direction: column;
+    }
+
+    .service_section .card-deck .card {
+        margin-bottom: 25px;
+    }
+}
+
+/* For screens less than or equal to 768px */
+@media (max-width: 768px) {
+    .about_section { /* Added missing class selector (.) */
+        height: fit-content;
+    }
+
+    .slider_img-box {
+        width: 85%;
+        margin: 65px auto;
+    }
+
+    .slider_section .custom_carousel-control {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 105px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fruit_section .fruit_detail-box {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .fruit_detail-box>div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact_section {
+        background-size: 105px;
+    }
+
+    .contact_section input {
+        background-color: transparent;
+    }
+
+    .info_section .col-md-3 {
+        text-align: center;
+    }
+
+    .info_section .col-md-3:not(:nth-last-child(1)) {
+        margin-bottom: 35px;
+    }
+
+    .tasty_section h2 {
+        font-size: 80px;
+    }
+}
+
+/* For screens less than or equal to 576px */
+@media (max-width: 576px) {
+    .slider_item-container .slider_item-detail {
+        text-align: center;
+    }
+
+    .slider_item-container .slider_item-detail .d-flex {
+        justify-content: center;
+    }
+}
+
+/* For screens less than or equal to 480px */
+@media (max-width: 480px) {
+    /* Add styles for extra small screens if needed */
+    .fruit_section {
+        padding: 20px;
+    }
+
+    .contact_section {
+        padding: 15px;
+    }
+
+    .slider_section h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* For screens less than or equal to 400px */
+@media (max-width: 400px) {
+    /* Tweak font sizes and layout for very small screens */
+    .hero_area h1 {
+        font-size: 1.5rem;
+    }
+
+    .service_section .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* For screens less than or equal to 360px */
+@media (max-width: 360px) {
+    /* Adjust layouts for ultra-small screens */
+    .tasty_section h2 {
+        font-size: 60px;
+    }
+
+    .slider_section .custom_carousel-control {
+        width: 80px;
+    }
+}
